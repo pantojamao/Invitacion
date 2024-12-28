@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .heart {
+            font-size: 50px;
+            color: #4CAF50;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Invitación Especial</h1>
+        <h3>El Momento Perfecto</h3>
+        <p class="heart">❤️</p>
+        <div class="image-container">
+            <img src="https://candybargratis.com/wp-content/uploads/2023/09/alfajores3-candy-bar-STICH-5-kit-imprimible.png" alt="Invitación">
+        </div>
+        <p class="message">Hola ING Yolanda Potosi,</p>
+        <p class="message">¿Recuerdas que hace unos meses te mencioné que tenía una invitación especial antes de que terminara el año? Es para el 28 de diciembre. ¿Te gustaría acompañarme?</p>
+        <a class="btn" href="https://wa.me/3142234168?text=¡Hola!%20Me%20encantaría%20acompañarte." target="_blank">Confirmar Asistencia</a>
+        <a class="btn" href="https://wa.me/3142234168?text=Gracias%20por%20la%20invitación,%20pero%20no%20puedo%20asistir." target="_blank">No Puedo Asistir</a>
+        <p class="message">ATT:ING MAURICIO  DESARROLLADOR DE SOFTWARE </p>
+    </div>
+</body>
+</html>
